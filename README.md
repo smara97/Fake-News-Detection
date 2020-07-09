@@ -73,5 +73,7 @@ Using Blue Score model to test the dependency of sentence by togther
 [exist one version](https://github.com/smara97/FakeNews/blob/master/quality_text_version1_.ipynb)
 
 
-After get the credibility and quality of each new,can sort them from most credibility and quality.  
+After get the credibility and quality values by integrate two notebooks(liarplus_version1_.ipynb,quality_text_version1_.ipynb) in one notebook to test [Fake news detection](https://github.com/smara97/Fake-News-Detection/blob/master/fake_news_detection.ipynb)
+
+then sort the credibility and quality values by using weights of mulitply numbers 80% of the credibility and 20% of th quality values  
 
