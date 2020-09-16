@@ -1,5 +1,6 @@
 # Fake News Detection
-[](https://github.com/smara97/Fake-News-Detection/blob/master/fakenews.png)
+
+![](https://github.com/smara97/Fake-News-Detection/blob/master/fakenews.png)
 
 ## MAIN OBJECTIVES
 
@@ -71,14 +72,26 @@ Trained 2 models : first one used [CNN](https://github.com/smara97/Fake-News-Det
 
 
 
-## detection subject of news 
+### detection subject of news 
 
 can detect the subject of news when using url scrape to test the truth of news , used multiclass machine learning alogrithm (logistic regression) with sklearn multi label binarizerto encode subject calss to 1,0s the trained [model](https://github.com/smara97/Fake-News-Detection/blob/master/model.sav) and used TF-IDF to vectorization the text and save [model](https://github.com/smara97/Fake-News-Detection/blob/master/vectorize.sav) .
 [subject detection](https://github.com/smara97/Fake-News-Detection/blob/master/subject_predict.py).
 
 This model Implemented by Amal Ossman Abd El-moaz @amlosma .
 
-## Provide a trending fake news map to visualizes the percentage of fake news around different cities in the world 
+
+## Quality of text 
+
+Using Blue Score model to test the dependency of sentence by togther 
+[exist one version](https://github.com/smara97/Fake-News-Detection/blob/master/1st%20version/quality_text_version1_.ipynb)
+
+After get the credibility and quality values by integrate two notebooks(liarplus_version1_.ipynb,quality_text_version1_.ipynb) in one notebook to test [Fake news detection](https://github.com/smara97/Fake-News-Detection/blob/master/fake_news_detection.ipynb)
+then sort the credibility and quality values by using weights of mulitply numbers 80% of the credibility and 20% of th quality values.
+
+
+
+## Trending Map
+Provide a trending fake news map to visualizes the percentage of fake news around different cities in the world 
 
 Implemented trending map to track the fake and real news in the world [Trending Map](https://github.com/smara97/Fake-News-Detection/tree/master/trending) .
 Implemented by Mahmoud Salah @mahmoud24598salah .
@@ -97,11 +110,3 @@ But that is exactly what's happened. Sir Philip Rutnam has been one of the most 
 His time there has not always been an unalloyed success - the Home Office, as one of the biggest and most complicated departments in the government, has struggled with various issues, most notably the Windrush scandal. The Home Office is often seen as a poisoned chalice given the nature of its job."
 
 the output : The credibility of new: 52.1%
-
-## Quality of text 
-
-Using Blue Score model to test the dependency of sentence by togther 
-[exist one version](https://github.com/smara97/Fake-News-Detection/blob/master/1st%20version/quality_text_version1_.ipynb)
-
-After get the credibility and quality values by integrate two notebooks(liarplus_version1_.ipynb,quality_text_version1_.ipynb) in one notebook to test [Fake news detection](https://github.com/smara97/Fake-News-Detection/blob/master/fake_news_detection.ipynb)
-then sort the credibility and quality values by using weights of mulitply numbers 80% of the credibility and 20% of th quality values.
