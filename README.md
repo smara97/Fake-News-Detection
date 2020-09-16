@@ -72,7 +72,7 @@ Trained 2 models : first one used [CNN](https://github.com/smara97/Fake-News-Det
 
 
 
-### detection subject of news 
+### Detect subjects of news 
 
 can detect the subject of news when using url scrape to test the truth of news , used multiclass machine learning alogrithm (logistic regression) with sklearn multi label binarizerto encode subject calss to 1,0s the trained [model](https://github.com/smara97/Fake-News-Detection/blob/master/model.sav) and used TF-IDF to vectorization the text and save [model](https://github.com/smara97/Fake-News-Detection/blob/master/vectorize.sav) .
 [subject detection](https://github.com/smara97/Fake-News-Detection/blob/master/subject_predict.py).
