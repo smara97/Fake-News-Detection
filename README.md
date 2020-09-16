@@ -1,9 +1,28 @@
 # Fake News Detection
+[](https://github.com/smara97/Fake-News-Detection/blob/master/fakenews.png)
 
-- Help know news are fake or real , measure quality of article and sort the authors by the quality and reality of article .
+## MAIN OBJECTIVES
+
+### Overview
+
+Fake news detection is an application that can be used to determine whether a news is fake
+or not based on a dataset and specific AI algorithms that we have developed. The
+application can be used by either normal users to check whether the news they face in their
+daily life is fake or not. It can also be used by Organizations and Journalists for business
+needs.
+
+### Objectives
+
+1. Assemble a trusted dataset that can be depended on for the AI model
+2. Build strong AI algorithm that can be both trustworthy and fast
+3. Return accurate results for news integrity.
+4. Provide several options for users when checking if a news is fake. (E.g: the ability to
+enter the news details manually or fetch them from a URL)
+5. Each user should have a profile history with his previous news submissions
+6. Provide a trending fake news map to visualizes the percentage of fake news around
+different cities in the world.
+
 - Get ~63% Accuracy using Liar plus data-set, This state of the art  model without using (Attentions layers) BERT model .
-
-
 
 ## Fake News
 
@@ -46,9 +65,23 @@ get cosine similarity between mean of each featuers and mean of another featuers
 mean(tarnsferd_statement) + cosine similarity between mean(tarnsferd_statement) and mean(tarnsferd_subject) + mean(tarnsferd_subject) + cosine similarity between mean(tarnsferd_subject) and mean(tarnsferd_justification) and mean(tarnsferd_justification) + cosine similarity between mean(tarnsferd_justification) and mean(tarnsferd_statement) .
 
 
-25 epochs to training model , if you need model learn more increase the number of epochs .
+20 epochs to training model , if you need model learn more increase the number of epochs .
 
-more +3 versions of project [the last version of project](https://github.com/smara97/FakeNews/blob/master/liarplus_version_1.ipynb)
+Trained 2 models : first one used [CNN](https://github.com/smara97/Fake-News-Detection/blob/master/Train/fake_new_detection-CNN.ipynb) , the second one used [LSTM](https://github.com/smara97/Fake-News-Detection/blob/master/Train/fake_news_detection_lstm.ipynb)
+
+
+
+## detection subject of news 
+
+can detect the subject of news when using url scrape to test the truth of news , used multiclass machine learning alogrithm (logistic regression) with sklearn multi label binarizerto encode subject calss to 1,0s the trained [model](https://github.com/smara97/Fake-News-Detection/blob/master/model.sav) and used TF-IDF to vectorization the text and save [model](https://github.com/smara97/Fake-News-Detection/blob/master/vectorize.sav) .
+[subject detection](https://github.com/smara97/Fake-News-Detection/blob/master/subject_predict.py).
+
+This model Implemented by Amal Ossman Abd El-moaz @amlosma .
+
+## Provide a trending fake news map to visualizes the percentage of fake news around different cities in the world 
+
+Implemented trending map to track the fake and real news in the world [Trending Map](https://github.com/smara97/Fake-News-Detection/tree/master/trending) .
+Implemented by Mahmoud Salah @mahmoud24598salah .
 
 example of new:
 
@@ -63,17 +96,12 @@ There is nothing remotely normal however about a top government official quittin
 But that is exactly what's happened. Sir Philip Rutnam has been one of the most senior civil servants for years, in charge at the Home Office for the last few.
 His time there has not always been an unalloyed success - the Home Office, as one of the biggest and most complicated departments in the government, has struggled with various issues, most notably the Windrush scandal. The Home Office is often seen as a poisoned chalice given the nature of its job."
 
-
-the output : The credibility of new: 51.84%
-
+the output : The credibility of new: 52.1%
 
 ## Quality of text 
 
 Using Blue Score model to test the dependency of sentence by togther 
-[exist one version](https://github.com/smara97/FakeNews/blob/master/quality_text_version1_.ipynb)
-
+[exist one version](https://github.com/smara97/Fake-News-Detection/blob/master/1st%20version/quality_text_version1_.ipynb)
 
 After get the credibility and quality values by integrate two notebooks(liarplus_version1_.ipynb,quality_text_version1_.ipynb) in one notebook to test [Fake news detection](https://github.com/smara97/Fake-News-Detection/blob/master/fake_news_detection.ipynb)
-
-then sort the credibility and quality values by using weights of mulitply numbers 80% of the credibility and 20% of th quality values  
-
+then sort the credibility and quality values by using weights of mulitply numbers 80% of the credibility and 20% of th quality values.
