@@ -65,7 +65,7 @@ get cosine similarity between mean of each two featuers.
 
 mean(tarnsferd_statement) + cosine similarity between mean(tarnsferd_statement) and mean(tarnsferd_subject) + mean(tarnsferd_subject) + cosine similarity between mean(tarnsferd_subject) and mean(tarnsferd_justification) and mean(tarnsferd_justification) + cosine similarity between mean(tarnsferd_justification) and mean(tarnsferd_statement) .
 
-![](https://github.com/smara97/Fake-News-Detection/blob/master/model_design.png)
+![](https://github.com/smara97/Fake-News-Detection/blob/master/model_desgin.png)
 
 20 epochs to training model , if you need model learn more increase the number of epochs .
 
