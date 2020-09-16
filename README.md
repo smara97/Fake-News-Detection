@@ -97,6 +97,9 @@ Provide a trending fake news map to visualizes the percentage of fake news aroun
 Implemented trending map to track the fake and real news in the world [Trending Map](https://github.com/smara97/Fake-News-Detection/tree/master/trending) .
 Implemented by Mahmoud Salah @mahmoud24598salah .
 
+
+To run [App](https://github.com/smara97/Fake-News-Detection/blob/master/app.py)
+
 #### example of new:
 
 statement="The decade that shattered trust in politics."
