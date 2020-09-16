@@ -61,10 +61,11 @@ After transfer each word to vector of numbers has size 300 dims ,ex:
 'trumb' --> [1,4,.,.,.,.,.,.,.,.,.,9] , then each sentence have vectors of vectors numbers.
 
 Using mathematics trick :
-get cosine similarity between mean of each featuers and mean of another featuers.
+get cosine similarity between mean of each two featuers.
 
 mean(tarnsferd_statement) + cosine similarity between mean(tarnsferd_statement) and mean(tarnsferd_subject) + mean(tarnsferd_subject) + cosine similarity between mean(tarnsferd_subject) and mean(tarnsferd_justification) and mean(tarnsferd_justification) + cosine similarity between mean(tarnsferd_justification) and mean(tarnsferd_statement) .
 
+![](https://github.com/smara97/Fake-News-Detection/blob/master/model_design.png)
 
 20 epochs to training model , if you need model learn more increase the number of epochs .
 
@@ -96,7 +97,7 @@ Provide a trending fake news map to visualizes the percentage of fake news aroun
 Implemented trending map to track the fake and real news in the world [Trending Map](https://github.com/smara97/Fake-News-Detection/tree/master/trending) .
 Implemented by Mahmoud Salah @mahmoud24598salah .
 
-example of new:
+#### example of new:
 
 statement="The decade that shattered trust in politics."
 
