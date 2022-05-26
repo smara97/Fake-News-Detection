@@ -77,7 +77,7 @@ tinysegmenter==0.3
 tldextract==2.2.3
 torch==1.6.0
 tqdm==4.48.2
-Twisted==20.3.0
+Twisted==22.4.0
 urllib3==1.25.10
 w3lib==1.22.0
 warcio==1.7.4
